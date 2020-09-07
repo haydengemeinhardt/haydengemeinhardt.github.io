@@ -168,6 +168,10 @@ h1, h2, h3{
 
 /*********************************************Blog************************************************/
 
+.article{
+	background-image: linear-gradient(to bottom right, #02577a, #d4f0fc);
+}
+
 .column80{
 	margin: auto;
 	width: 1000px;
