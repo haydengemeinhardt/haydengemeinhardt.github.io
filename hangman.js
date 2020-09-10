@@ -34,7 +34,7 @@ function startHangman() {
 			currentLives.innerHTML = "You lost!";
 		else
 			currentLives.innerHTML = "You have " + lives + " lives";
-		if (letterCount == word.length)
+		if (letterCount == word.length && win == 0)
 		{
 			currentLives.innerHTML = "You Win!";
 			win = 1;
