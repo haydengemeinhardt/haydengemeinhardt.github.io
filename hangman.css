@@ -1,0 +1,61 @@
+.table {
+	display: table;
+}
+
+#alphabet{
+	padding: 0px;
+	margin: 15px;
+	display: flex;
+	justify-content: center;
+}
+
+#alphabet li{
+	cursor: pointer;
+	margin: 0 15px 15px 0;
+	padding: 10px 10px;
+	list-style:none;
+	width:35px;
+	float: left;
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+
+#hangingMan{
+	display: flex;
+	justify-content: center;
+}
+
+
+#clicked {
+	background-color: blue;
+	cursor: default;
+}
+
+#word {
+	padding: 0px;
+	text-align: center;
+}
+
+#word li{
+	list-style: none;
+	width: 40px;
+	display: inline-block;
+	font-size: 40px;
+}
+
+#lives{
+	text-align: center;
+	display: block;
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+.content button{
+	cursor: pointer;
+	width: 10%;
+	margin-left: 45%;
+	margin-right: 45%;
+	margin-bottom: 60px;
+	margin-top: 20px;
+}
