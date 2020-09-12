@@ -2,14 +2,11 @@
 <html>
 	<head>
 		<title> Hayden Gemeinhardt </title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="stylesheet" type="text/css" href="hangman.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script type="text/javascript" src="hangman.js"></script>
 	</head>
 
-	<body onload="startHangman()">
+	<body>
 		<div class="container"style="background-image: linear-gradient(to bottom right, #02577a, #d4f0fc);">
 			<div class="header">
 				<a href="index.html">Home</a>
@@ -17,20 +14,25 @@
 				<div class="dropdown">
 					<button class="dropdown-button active">Projects <i class="fa fa-angle-down"></i></button>
 					<div class="dropdown-content">
-						<a class="active" href="hangman.html">Hangman</a>
+						<a href="hangman.html">Hangman</a>
 						<a href="honorsprojects.html">Honors Projects</a>
-						<a href="personalprojects.html">Personal Projects</a>
+						<a class="active" href="personalprojects.html">Personal Projects</a>
 					</div>
 				</div>
 				<a href="about.html">About<a/>
 			</div>
 			<div class="content">
-				<div class="title" style="text-align:center">Hangman</div><br>
-				<div id="buttons"></div>
-				<div id="answerHold"></div>
-				<div id="hangingMan"></div>
-				<div id="lives"></div>
-				<button id="restart">Restart</button>
+				<div class="title" style="text-align:center">Personal Projects</div>
+				<div class="smalltitle" style="text-align:center"><br>All of the projects I have made for fun:</div>
+				<div class="columncontainer">
+					<div class="card center" style="width:800px; text-align:center">
+						<h2><a target="blank" href="https://github.com/haydengemeinhardt/calculator">Calculator</a> capable of almost all functions on a TI-34, utilizing stacks, templates, and Dijkstra's shunting yard algortihm</h2>
+					</div>
+					<div class="card center" style="width:800px; text-align:center">
+						<h2><a target="blank" href="https://github.com/haydengemeinhardt/hangman">Hangman in C++</a> (recreated in JavaScript on this website)</h2>
+					</div>
+				</div>	
+
 			</div>
 			<div class="footer">
 				Copyright &copy; 2020 Hayden Gemeinhardt
