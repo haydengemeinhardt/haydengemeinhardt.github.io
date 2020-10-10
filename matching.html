@@ -4,9 +4,9 @@
 		<title> Hayden Gemeinhardt </title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="stylesheet" type="text/css" href="hangman.css" />
+		<link rel="stylesheet" type="text/css" href="matching.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script type="text/javascript" src="hangman.js"></script>
+		<script type="text/javascript" src="matching.js"></script>
 	</head>
 
 	<body onload="startHangman()">
@@ -25,12 +25,11 @@
 				<a href="about.html">About<a/>
 			</div>
 			<div class="content">
-				<div class="title" style="text-align:center">Hangman</div><br>
-				<div id="buttons"></div>
-				<div id="answerHold"></div>
-				<div id="hangingMan"></div>
-				<div id="lives"></div>
-				<button id="restart">Restart</button>
+				<div class="title" style="text-align:center">Memory Game</div><br>				
+				<div class="buttons"></div>
+				<div class="wintitle"><span>You Win!</span></div>
+				<div class="smalltitle" style="text-align:center">Still working out some bugs</div>
+				<button class="restart">Restart</button>				
 			</div>
 			<div class="footer">
 				Copyright &copy; 2020 Hayden Gemeinhardt
