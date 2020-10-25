@@ -1,0 +1,11 @@
+<a href="../index.html">Home</a>
+<a class="active" href="../blog.html">Blog</a>
+<div class="dropdown">
+	<button class="dropdown-button">Projects <i class="fa fa-angle-down"></i></button>
+	<div class="dropdown-content">
+		<a class="active" href="games.html">Games</a>
+		<a href="honorsprojects.html">Honors Projects</a>
+		<a href="personalprojects.html">Personal Projects</a>
+	</div>
+</div>
+<a href="about.html">About<a/>
