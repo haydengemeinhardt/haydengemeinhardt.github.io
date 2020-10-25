@@ -9,17 +9,7 @@
 	<body>
 		<div class="container"style="background-image: linear-gradient(to bottom right, #02577a, #d4f0fc);">
 			<div class="header">
-				<a href="index.html">Home</a>
-				<a href="blog.html">Blog</a>
-				<div class="dropdown">
-					<button class="dropdown-button active">Projects <i class="fa fa-angle-down"></i></button>
-					<div class="dropdown-content">
-						<a href="games.html">Games</a>
-						<a href="honorsprojects.html">Honors Projects</a>
-						<a class="active" href="personalprojects.html">Personal Projects</a>
-					</div>
-				</div>
-				<a href="about.html">About<a/>
+				<div class="headercontent"></div>
 			</div>
 			<div class="content">
 				<div class="title" style="text-align:center">Personal Projects</div>
@@ -44,3 +34,12 @@
 	</body>
 
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+        $(".header").load("headercontent.txt");
+    ;
+});
+</script>
