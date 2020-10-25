@@ -11,16 +11,8 @@
 
 	<body onload="startHangman()">
 		<div class="container"style="background-image: linear-gradient(to bottom right, #02577a, #d4f0fc);">
-			<div class="header">
-				<a href="index.html">Home</a>
-				<a href="blog.html">Blog</a>
-				<div class="dropdown">
-					<button class="dropdown-button active">Projects <i class="fa fa-angle-down"></i></button>
-					<div class="dropdown-content">
-						<div id="contact"></div>
-					</div>
-				</div>
-				<a href="about.html">About<a/>
+			<div id="header">
+
 			</div>
 			<div class="content">
 				<div class="title" style="text-align:center">Matching (Beta)</div><br>				
@@ -41,7 +33,7 @@
 
 <script>
 $(document).ready(function(){
-        $("#contact").load("test1.txt");
+        $("#header").load("test1.txt");
     ;
 });
 </script>
