@@ -1,0 +1,3 @@
+<a class="active" href="games.html">Games</a>
+<a href="honorsprojects.html">Honors Projects</a>
+<a href="personalprojects.html">Personal Projects</a>

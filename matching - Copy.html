@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Hayden Gemeinhardt </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="matching.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="matching.js"></script>
+	</head>
+
+	<body onload="startHangman()">
+		<div class="container"style="background-image: linear-gradient(to bottom right, #02577a, #d4f0fc);">
+			<div class="header">
+				<a href="index.html">Home</a>
+				<a href="blog.html">Blog</a>
+				<div class="dropdown">
+					<button class="dropdown-button active">Projects <i class="fa fa-angle-down"></i></button>
+					<div class="dropdown-content">
+						<div id="contact"></div>
+					</div>
+				</div>
+				<a href="about.html">About<a/>
+			</div>
+			<div class="content">
+				<div class="title" style="text-align:center">Matching (Beta)</div><br>				
+				<div class="buttons"></div>
+				<div class="wintitle"><span>You Win!</span></div>
+				<div class="smalltitle" style="text-align:center">Still working out some bugs</div>
+				<button class="restart">Restart</button>				
+			</div>
+			<div class="footer">
+				Copyright &copy; 2020 Hayden Gemeinhardt
+			</div>
+		</div>
+	</body>
+
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+        $("#contact").load("test1.txt");
+    ;
+});
+</script>
