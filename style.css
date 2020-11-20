@@ -196,6 +196,8 @@ h1, h2, h3{
 	background-color: white;
 	padding: 20px;
 	margin-top: 20px;
+	border-radius: 25px;
+	border: 2px solid black;
 }
 
 .center {
