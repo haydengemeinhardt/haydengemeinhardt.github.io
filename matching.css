@@ -6,8 +6,7 @@
 	max-width: 800px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	
+
 	
 }
 
@@ -24,6 +23,11 @@
 	align-items: center;
 	float: left;
 	user-select: none;
+	border-radius: 25px;
+	border: 2px solid black;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
 }
 
 .clicked {
@@ -38,6 +42,8 @@
 	margin-right: 45%;
 	margin-bottom: 60px;
 	margin-top: 20px;
+	border-radius: 25px;
+	border: 2px solid black;
 }
 
 .wintitle {
