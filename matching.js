@@ -1,3 +1,5 @@
+// if you are reading this, it is still in a mess from my testing... but I think I finally fixed the bug?!
+
 function startHangman() {
 	var numbers = ['1', '1', '2', '2', '3', '3', '4', '4', '5', '5', '6', '6', '7', '7', '8', '8'];
 	var win = 0;
@@ -15,7 +17,7 @@ function startHangman() {
 		card = document.createElement('ul');
 		for (var i = 0; i < 16; i++)
 		{
-			card.class = 'buttons'
+			card.class = 'buttons';
 			list = document.createElement('li');
 			list.class = 'letter';
 			var temp = Math.floor(Math.random() * numbers.length);
@@ -30,13 +32,14 @@ function startHangman() {
 	/* When letter is clicked */
 	var click = function () {
 		list.onclick = function(){
-			this.setAttribute("style", "cursor: default; background-color: white");
-			this.onclick = null;
+			this.setAttribute("style", "cursor: crosshair; background-color: white");
+			this.onclick = disableclick(this);
+			console.log("null");
 			if (guess == -1)
 			{
 				guessnumber = (this.innerHTML);
 				guess = this;
-				console.log(guessnumber);
+				console.log(guess);
 			}
 			else
 			{
@@ -46,27 +49,92 @@ function startHangman() {
 				console.log(secondguessnum);
 				document.getElementsByClassName('buttons')[0].style.pointerEvents = 'none';
 				setTimeout(function() {
-					(document.getElementsByClassName('buttons')[0].style.pointerEvents = 'auto');
+					document.getElementsByClassName('buttons')[0].style.pointerEvents = 'auto';
 					if (guessnumber == secondguessnum)
 					{
-						console.log("correct");
 						guess.setAttribute("style", "cursor: default; background-color: gray");
 						secondguess.setAttribute("style", "cursor: default; background-color: gray");
+						console.log("startcorrectguess");
 						correctguess();
 					}
 					else
 					{
 						guess.setAttribute("style", "cursor: pointer; background-color: black");
-						guess.onclick = list.onclick;
+						console.log(guess);
+						guess.onclick = clicked;
+						console.log("1wrongonclick");
 						secondguess.setAttribute("style", "cursor: pointer; background-color: black");
-						secondguess.onclick = list.onclick;
+						console.log(secondguess);
+						secondguess.onclick = clicked;
+						console.log("2wrongonclick");
 						console.log("wrong");
-						resetguess();
+						guess = -1;
+						guessnumber = -1;
+						secondguess = -1;
+						secondguessnum = -1;
 					}
 				}, 1000);
 			}
 		}
 	}
+	
+	var clicked = function(){
+		this.setAttribute("style", "cursor: crosshair; background-color: white");
+		this.onclick = disableclick(this);
+		console.log("null");
+		if (guess === -1)
+		{
+			guessnumber = (this.innerHTML);
+			guess = this;
+			console.log(guess);
+		}
+		else
+		{
+//				wait();
+			secondguessnum = this.innerHTML;
+			secondguess = this;
+			console.log(secondguessnum);
+			document.getElementsByClassName('buttons')[0].style.pointerEvents = 'none';
+			setTimeout(function() {
+				document.getElementsByClassName('buttons')[0].style.pointerEvents = 'auto';
+				if (guessnumber == secondguessnum)
+				{
+					guess.setAttribute("style", "cursor: default; background-color: gray");
+					secondguess.setAttribute("style", "cursor: default; background-color: gray");
+					console.log("startcorrectguess");
+					correctguess();
+				}
+				else
+				{
+					guess.setAttribute("style", "cursor: pointer; background-color: black");
+					console.log(guess);
+					guess.onclick = clicked;
+					console.log("1wrongonclick");
+					secondguess.setAttribute("style", "cursor: pointer; background-color: black");
+					console.log(secondguess);
+					secondguess.onclick = clicked;
+					console.log("2wrongonclick");
+					console.log("wrong");
+					guess = -1;
+					guessnumber = -1;
+					secondguess = -1;
+					secondguessnum = -1;
+				}
+			}, 1000);
+		}
+	
+	}
+	
+	
+	var disableclick = function (el) {
+		el.disabled = true;
+	}
+	
+	var enableclick = function (el) {
+		console.log("enableclick");
+		el.disabled = false;
+	}
+	
 	
 	//probably get rid of
 	var correctguess = function () {
@@ -77,9 +145,10 @@ function startHangman() {
 		score = score+2;
 		if (score === 16)
 		{
-			
+			console.log("win!");
 			wintitle.setAttribute("style", "display: flex");
 		}
+		console.log("finishcorrectguess");
 	}
 	
 	var resetguess = function () {
