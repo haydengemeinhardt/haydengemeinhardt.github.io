@@ -9,13 +9,15 @@ function startHangman() {
 	var secondguess = -1;
 	var secondguessnumb = -1;
 	var score = 0;
+	var mode = 2;
+	var numofbuttons = 20;
 	wintitle = document.getElementsByClassName('wintitle')[0];
 	
 	/* Create card interface */
 	var buttons = function () {
 		cards = document.getElementsByClassName('buttons')[0];
 		card = document.createElement('ul');
-		for (var i = 0; i < 16; i++)
+		for (var i = 0; i < numofbuttons; i++)
 		{
 			card.class = 'buttons';
 			list = document.createElement('li');
@@ -32,7 +34,7 @@ function startHangman() {
 	/* When letter is clicked */
 	var click = function () {
 		list.onclick = function(){
-			this.setAttribute("style", "cursor: crosshair; background-color: white");
+			this.setAttribute("style", "cursor: default; background-color: white");
 			this.onclick = disableclick(this);
 			console.log("null");
 			if (guess == -1)
@@ -79,7 +81,7 @@ function startHangman() {
 	}
 	
 	var clicked = function(){
-		this.setAttribute("style", "cursor: crosshair; background-color: white");
+		this.setAttribute("style", "cursor: default; background-color: white");
 		this.onclick = disableclick(this);
 		console.log("null");
 		if (guess === -1)
@@ -165,16 +167,56 @@ function startHangman() {
 //		document.getElementsByClassName('buttons')[0].style.pointerEvents = 'auto';
 	}
 	
-	/* Start easy */
 	var start = function () {
-		numbers = ['1', '1', '2', '2', '3', '3', '4', '4', '5', '5', '6', '6', '7', '7', '8', '8'];
-		buttons();
 		win = 0;
 		score = 0;
 		wintitle.setAttribute("style", "display: none");
+		if (mode == 1)
+			starteasy();
+		else if (mode == 2)
+			startmedium();
+		else
+			starthard();
+	}
+	
+	var starteasy = function () {
+		numbers = ['1', '1', '2', '2', '3', '3', '4', '4', '5', '5', '6', '6'];
+		mode = 1;
+		numofbuttons = 12;
+		buttons();
+	}
+	
+	var startmedium = function () {
+		numbers = ['1', '1', '2', '2', '3', '3', '4', '4', '5', '5', '6', '6', '7', '7', '8', '8', '9', '9', '10', '10'];
+		mode = 2;
+		numofbuttons = 20;
+		buttons();
+	}
+	
+	var starthard = function () {
+		numbers = ['1', '1', '2', '2', '3', '3', '4', '4', '5', '5', '6', '6', '7', '7', '8', '8', '9', '9', '10', '10', '11', '11', '12', '12', '13', '13', '14', '14'];
+		mode = 3;
+		numofbuttons = 28;
+		buttons();
 	}
 	
 	start();
+	
+	document.getElementsByClassName('easy')[0].onclick = function () {
+		card.parentNode.removeChild(card);
+		starteasy();
+	}
+	
+		document.getElementsByClassName('medium')[0].onclick = function () {
+		card.parentNode.removeChild(card);
+		startmedium();
+	}
+	
+	document.getElementsByClassName('hard')[0].onclick = function () {
+		card.parentNode.removeChild(card);
+		starthard();
+	}
+	
 	
 	document.getElementsByClassName('restart')[0].onclick = function () {
 		card.parentNode.removeChild(card);
