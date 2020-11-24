@@ -1,5 +1,5 @@
 <a href="../index.html">Home</a>
-<a href="../blog.html">Blog</a>
+<a class="active" href="../blog.html">Blog</a>
 <div class="dropdown">
 	<button class="dropdown-button">Projects <i class="fa fa-angle-down"></i></button>
 	<div class="dropdown-content">
