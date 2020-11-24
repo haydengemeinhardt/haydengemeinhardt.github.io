@@ -59,6 +59,7 @@
 	color: black;
 	width: 150px;
 	margin: 15px;
+	font-size: 20px;
 }
 
 .content button{
@@ -70,6 +71,7 @@
 	margin-top: 20px;
 	border-radius: 25px;
 	border: 2px solid black;
+	font-size: 20px;
 }
 
 
