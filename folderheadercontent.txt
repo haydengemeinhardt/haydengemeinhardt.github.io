@@ -8,4 +8,5 @@
 		<a href="personalprojects.html">Personal Projects</a>
 	</div>
 </div>
-<a href="about.html">About<a/>
+<a href="../research.html">Research</a>
+<a href="../about.html">About<a/>
