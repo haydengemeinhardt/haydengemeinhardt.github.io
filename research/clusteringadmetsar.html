@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Hayden Gemeinhardt </title>
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
+		<style>
+		h1 {font: 700 2.0rem/1.2 "Roboto";}
+		h2 {font: 700 1.5rem/1.2 "Roboto";} 
+		h3 {font: 700 1.0rem/1.2 "Roboto";}
+		p {font: 400 1.0rem/1.5 "Roboto";}
+		</style>
+	</head>
+
+	<body>
+		<div class="container article">
+			<div class="header">
+				<div class="headercontent"></div>
+			</div>
+			<div class="content">
+				<div class="title" style="text-align:center">My Research Experience</div>
+				<div class="row">
+					<div class="column80">
+						<div class="card">
+							<a href="#" onClick="history.go(-1);return true;">Back To Research</a>
+							<h1>Clustering The admetSAR dataset</h1><br>
+							<h2>October 2020</h2>
+							<p><br>
+								This one was a bit more interesting. Again, I was still new to python. However, this time, my class did not line up. I was on my own to learn how to do kmeans clustering. Well, kind of. I had the internet, which is basically everything to us CS folk.
+							</p>
+							<p>
+								The goal here was simply to cluster the drugs in the dataset together. This dataset was different from the last one, in that it listed all the qualities of each different drug.
+							</p>
+							<p>
+								In my first attempt, I was niavely trying to graph it as a scatterplot without reducing first dimensionality. I spent a long time wondering why my plot looked so strange, like an imperial Japanese flag.
+							</p>
+							<p>
+								Eventually I found out I needed to use TSNE and then visualize it with a seaborn lmplot. Suddenly, another problem arose. Now I had gummy worms all over the graph. These worms haunted me longer than most nightmares.
+							</p>
+							<p>
+								I forget exaclty what it was, but I believe I was using PCA to further reduce dimensionality before sending it to TSNE, when I did not need to since we only had 48 columns.
+							</p>
+							<p>
+								Finally, my last obstacle was tuning the parameters for TSNE, which luckily I found a good post on. I tried 3 different perplexities, 5, 30, and 50, then chose 50 since that looked the cleanest. Then it was trying out different cluster sizes, and in the end I settled on 12.
+							</p>
+							<p>
+								I presented my work to the group and told them about different improvements that could be made (such as instead of removing columns with strings, I simply id the strings with numbers, or reinserting IDs after sorting by clusters). However, I was met with a "we are now use a different dataset".
+							</p>
+							<p>
+								...
+							</p>
+							<p>
+								Oh well, at least I know how to cluster now!
+							</p>
+							<a href="#" onClick="history.go(-1);return true;">Back To Research</a>
+						</div>
+					</div>
+				</div>
+				<div style="padding-bottom:60px"></div>
+			</div>
+			<div class="footer">
+				Copyright &copy; 2020 Hayden Gemeinhardt
+			</div>
+		</div>
+	</body>
+
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+        $(".headercontent").load("../folderheadercontent.txt");
+    ;
+});
+</script>
