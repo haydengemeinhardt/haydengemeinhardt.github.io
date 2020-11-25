@@ -8,5 +8,5 @@
 	</div>
 </div>
 <a href="../research.html">Research</a>
-<a href="games.html">Games</a>
+<a href="../games.html">Games</a>
 <a href="../about.html">About<a/>
