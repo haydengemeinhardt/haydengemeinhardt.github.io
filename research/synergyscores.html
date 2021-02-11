@@ -26,6 +26,7 @@
 							<a href="#" onClick="history.go(-1);return true;">Back To Research</a>
 							<h1>Finding Synergy Scores</h1><br>
 							<h2>November 2020</h2>
+							<img src="standards.jpg" width="950" height="500" style="margin-top: 10px; object-fit:cover" alt="Failed To Load"/>
 							<p><br>
 								This was the peak of my career so far (as a first semester sophomore), so listen up.
 								</p>
@@ -38,17 +39,20 @@ My task was to recalculate the Bliss, Loewe, HSA, and ZIP scores for each pair o
 <p>
 I searched up python synergy package go to download a python package called Synergy (because synergy scores, right?) and rerun the data set through those functions. I ended up getting wildly different results for the ZIP and Loewe scores compared to the dataset we downloaded and I could not figure out why that was the case.
 </p>
+<img src="synergyfindervssynergy.jpg" width="750" height="550" style="margin-top: 10px; object-fit:cover" alt="Failed To Load"/>
 <p>
 After much hair pulling, I email the creator of the package to find out why that was the case. Turns out it was quite a few things.
 </p>
 <p>
-1.	The package I downloaded was different from the one used for the data set.
+<b>1.	The package I downloaded was different from the one used for the data set.</b>
 </p>
 <p>
 Wow, I really downloaded the wrong python package like a moron. Apparently, I was supposed to use the one the DrugComb team created and used called “SynergyFinder”, not “Synergy”. Oh well, you live and learn. Good news is no one ever found out I did this on accident, ha!
 </p>
 <p>
-2.	He disagreed with the DrugComb team
+<b>2.	He disagreed with the DrugComb team</b>
+</p>
+<p>
 There were multiple variations of the Loewe function. The way SynergyFinder did it was they picked the stronger drug, and calculated E_stronger(d1+d2). The one Synergy was using assumes the combo will never become stronger than the weaker drug, because that is the boundary of the range over which Loewe is defined. Loewe has problems when one drug is stronger than the other.
 </p>
 <p>
@@ -58,7 +62,7 @@ For Loewe:
 Loewe must calculate E_1 ^(-1) (E(d1,d2)) and E_2 ^(-1) (E(d1,d2)) where:
 </p>
 <p>
-E_i(d_i) is a function mapping dose (d_i) to effect (E_i) of drug_i (where drug_i is treated alone, not in combination)
+E_i(d_i) is a function mapping <b>dose</b> (d_i) to <b>effect</b> (E_i) of <b>drug_i</b> (where drug_i is treated alone, not in combination)
 </p>
 <p>
 E_i^(-1)(E) is the inverse of the above. Given an effect E, it tells you what dose (d_i) of drug_i would be required to achieve that effect
@@ -95,7 +99,7 @@ E0= 100.99</p><p>
 Emax = 0</p><p>
 Hill-slope = 163.4 (this is a VERY steep sigmoid, practically a step function)</p><p>
 EC50 = 666.1 uM (this is WAY above any concentration tested)</p><p>
-3.	There was a bug in the program
+<b>3.	There was a bug in the program</b>
 </p>
 <p>
 This was actually very interesting. He had a typo in a function call for calculating ZIP when only a single drug was being considered, and I had brought it to light when doing my cross testing.
