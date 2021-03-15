@@ -12,4 +12,5 @@ function generateGrid(){
 			var btn = document.createElement("button");
 			td.appendChild(btn);
 			tr.appendChild(td);
+	generateGrid();
 }
