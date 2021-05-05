@@ -10,7 +10,6 @@ function startHangman() {
 	var secondguessnumb = -1;
 	var score = 0;
 	var mode = 2;
-	var numofbuttons = 20;
 	wintitle = document.getElementsByClassName('wintitle')[0];
 	
 	/* Create card interface */
@@ -184,6 +183,7 @@ function startHangman() {
 		mode = 1;
 		numofbuttons = 10;
 		buttons();
+		wintitle.setAttribute("style", "display: none");
 	}
 	
 	var startmedium = function () {
@@ -191,6 +191,7 @@ function startHangman() {
 		mode = 2;
 		numofbuttons = 20;
 		buttons();
+		wintitle.setAttribute("style", "display: none");
 	}
 	
 	var starthard = function () {
@@ -198,6 +199,7 @@ function startHangman() {
 		mode = 3;
 		numofbuttons = 30;
 		buttons();
+		wintitle.setAttribute("style", "display: none");
 	}
 	
 	start();
