@@ -145,7 +145,7 @@ function startHangman() {
 		secondguess = -1;
 		secondguessnum = -1;
 		score = score+2;
-		if (score === 16)
+		if (score == numofbuttons)
 		{
 			console.log("win!");
 			wintitle.setAttribute("style", "display: flex");
