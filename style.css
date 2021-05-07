@@ -230,3 +230,76 @@ h1, h2, h3{
     margin: auto;
   }
 }
+
+/**************/
+.books{
+	padding: 0px;
+	margin: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.books li{
+	cursor: pointer;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	margin-right: 24px;
+	margin-left: 0px;
+	list-style: none;
+	width: 280px;
+	height: 400px;
+	background-color: white;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: 2px solid black;
+	font-size: 40px;
+}
+
+
+
+/* relevant styles */
+.imgwrap {
+  position: relative;
+  height: 400px;
+  width: 280px;
+}
+
+.imgdescriptionlayer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(212, 212, 212, 0.9);
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity .5s, visibility .5s;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.imgwrap:hover .imgdescriptionlayer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.imgdescription {
+  transition: .5s;
+  transform: translateY(1em);
+}
+
+.imgwrap:hover .imgdescription {
+  transform: translateY(0);
+}
