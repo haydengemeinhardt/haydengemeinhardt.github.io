@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Hayden Gemeinhardt </title>
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
+		<style>
+		h1 {font: 700 2.0rem/1.2 "Roboto";}
+		h2 {font: 700 1.5rem/1.2 "Roboto";} 
+		h3 {font: 700 1.0rem/1.2 "Roboto";}
+		p {font: 400 1.0rem/1.5 "Roboto";}
+		</style>
+	</head>
+
+	<body>
+		<div class="container article">
+			<div class="header">
+				<div class="headercontent"></div>
+			</div>
+			<div class="content">
+				<div class="title" style="text-align:center">ScienceVsEngineeringBlog</div>
+				<div class="row">
+					<div class="column80">
+						<div class="card">
+							<a href="#" onClick="history.go(-1);return true;">Back To Blog</a>
+							<h1>Encyclopedia of Proofs</h1><br>
+							<h2>By: Hayden Gemeinhardt | March 30, 2021</h2>
+							<img src="../images/abacus.jpg" width="950" height="500" style="margin-top: 10px; object-fit:cover" alt="Failed To Load"/>
+							<a target="blank" style="float:right" href="https://pixabay.com/photos/abacus-beads-mathematics-numeral-3116200/">Courtesy to _Alicja_ @pixabay</a>
+							<p><br>
+So far at LSU, one of my favorite classes I have taken is Discrete Mathematics. There’s something about its complex simplicity, like a modern painting. And thus, I randomly decided to stay up to four A.M. creating an encyclopedia of its many proofs!
+</p>
+<p>
+The fundamental basis lies in the “imply” principal (symbolized as ->). Simply put, <b>P implies Q means Q is necessary for P</b> (though P is not necessary for Q).
+<br>For example: If it is raining, then there are clouds in the sky.
+<br>Rain (P) is not necessary when there are clouds in the sky (Q). However, there must be clouds in the sky (Q) for there to be rain (P).
+<br>The implication is only false when it is raining (P) without clouds in the sky (/Q).
+</p>
+<h3>Types of Proofs:</h3>
+<p>
+<h3>Direct Proof- Assume P, explain how it concludes Q.</h3>
+<br>Theorem: For all n, if n is even, then n^2 is even.
+<br>Proof:
+<br>n=2k
+<br>n<sup>2</sup> = (2k)<sup>2</sup> = 4k<sup>2</sup> = 2(2k<sup>2</sup>) = 2z where z = 2k<sup>2</sup>
+<br>Since z is divisible by 2, n<sup>2</sup> must also be divisible by 2, and thus is even.
+</p>
+<p>
+<br>
+<h3>Trivial Proof: Show Q is always true regardless of P</h3>
+<br>Claim: If 0&ltn&lt1, then n<sup>2</sup>-2n+2 != 0
+<br>Proof:
+<br>(n-1)<sup>2</sup> >=0 since every square is non negative.
+<br>(n-1)<sup>2</sup> = n<sup>2</sup>-2n+1 >= 0
+<br>Adding 1 to both sides: n<sup>2</sup>-2n+2 >= 1 =! 0
+<br>In other words, no matter what n is chosen, the result can never be less than 1. Thus, the proposition 0<n<1 is irrelevant as n has no constraints for the conclusion to be true.
+</p>
+<p>
+<br>
+<h3>Vacuous Proof: Show P is always false regardless of Q</h3>
+<br>Remember, p->q is true when p is false. The “implies” statement is false only when p is true and q is false.
+<br>Claim: If n<sup>2</sup>+1<0, then n<sup>5</sup>>=4
+<br>Proof:
+<br>n<sup>2</sup>>=0 for all n (since every square is non negative), 
+<br>then n<sup>2</sup>+1>=n^2>=0
+<br>Thus n<sup>2</sup>+1 cannot be less than 0. The proposition P is always false.
+</p>
+<p>
+<br>
+<h3>Proof By Contradiction</h3>
+<br>Assume /P, show /Q, then claim //P=P
+<br>Claim: Square root of 2 is irrational (cannot be written as a fraction)
+<br>Proof:
+<br>Before we continue, let’s clarify two things. For a/b to be irrational, a or b is odd, or both a and b is odd. And if n=2m, then n is even as it can be divided by 2 (n/2=m).
+<br>sqrt(2) = a/b we are assuming /P, or saying sqrt(2) can be written as a fraction
+<br>2 = (a/b)<sup>2</sup> = a<sup>2</sup>/b<sup>2</sup>
+<br>2b<sup>2</sup> = a<sup>2</sup> Here, a<sup>2</sup> must be even since it is divisible by 2, and thus b must be odd to satisfy irrationality (because a and b cannot both be even).
+<br>2b<sup>2</sup> = (2c)<sup>2</sup> Here, we can say a=2c since a is even, where c=a/2
+<br>2b<sup>2</sup> = 4c<sup>2</sup>
+<br>b<sup>2</sup> = 2c<sup>2</sup> Here, b must be even because it is divisible by 2.
+<br>However, earlier we said b must be odd. Therefore, we have a contradiction.
+</p>
+<p>
+<br>
+<h3>Proof by Contrapositive: /Q->/P</h3>
+<br>Claim: if a+b is odd, then a is odd or b is odd.
+<br>Proof:
+<br>a is even and b is even (/Q). 
+<br>a=2m and b=2n
+<br>a+b = 2m+2n = 2(m+n). Since it is divisible by 2, it must be even (/P)
+<br>Thus we showed /Q->/P
+</p>
+<p>
+<br>
+<h3>Proof by Exhaustion: Show all possibilities to be true</h3>
+<br>Claim: n+7>n<sup>2</sup> for all integers 0<n<4
+<br>1+7=8>1<sup>1</sup>=1
+<br>2+7=9>2<sup>2</sup>=4
+<br>3+7=10>3<sup>3</sup>=9
+</p>
+<p>
+<br>
+<h3>Proof by Case: (P1 or P2 or P3)->Q = (P1->Q and P2->Q and P3->Q)</h3>
+<br>Claim: n<sup>2</sup>>=n if n is an integer
+<br>Case 1: For n=0, 0<sup>2</sup>>=0
+<br>Case 2: For n>=1, n<sup>2</sup>>=n then n*n>=n*1 then n>=1
+<br>Case 3: For n<0, all squares are positive, so n<sup>2</sup>>0>n
+</p>
+<p>
+<br>
+<h3>Constructive Proof by Existence: Show there exists</h3>
+<br>Claim: A positive integer can be written as the sum of cubes of a positive integer in two different ways
+<br>1729 = 10<sup>3</sup> + 9<sup>3</sup> = 12<sup>3</sup> + 1<sup>3</sup>
+</p>
+<p>
+<br>
+<h3>Nonconstructive Proof by Existence: Prove there must exist</h3>
+<br>Claim: Show there exists an x where x<sup>3</sup>+x-5 = 0
+<br>Intermediate Value Theorem (IVT): If f(x) is continuous on the interval [a,b] and N is a value between f(a) and f(b), then there exists a number c such that f(c)=N
+<br>a=1, f(a) = -3
+<br>b=2, f(b) = 5
+<br>-3&lt0&lt5, thus by IVT, there is a number c such that f(c)=0
+</p>
+<p>
+<br>
+<h3>Uniqueness Proof: Element exists and is unique (2 parts)</h3>
+<br>Claim: There is a unique function f(x) such that f’(x)=2x and f(0)=4
+<br>Existence: x<sup>2</sup>+4
+<br>Uniqueness: Suppose f1(x) and f2(x) both satisfy these conditions. f1’(x) = f2’(x) = 2x, and thus must differ by some constant C (since the integral of 2x = x<sup>2</sup>+C) as there is nothing else for them to differ by without affecting the derivative. 3 = f1(0) = f2(0)+C = 3+C. C must equal 0 for 3=f(2)=3+C, which means f1(x)=f2(x), and therefore the function is unique because there is no C value for which to make the two equations different yet have the same derivative 2x AND have f(0)=3.
+</p>
+<p>
+<br>
+<h3>Proof by Induction: Prove true when n=1, assume it to be true for n=k (induction hypothesis), prove true for n=k+1</h3>
+<br>“I think some intuition leaks out in every step of an induction proof” Jim Propp
+<br>In computer science, we are met with this equation all the time: 1+2+…+n=n(n+1)/2
+<br>For n=1: 1=1*(1+1)/2=1 Good
+<br>Assume n=k: 1+2+…+k=k(k+1)/2 Induction Hypothesis
+<br>Show n=k+1 holds: 1+2+…+(k+1) = (k+1)*((k+1)+1)/2 = ((k+1)(k+2))/2
+<br>Starting with the induction hypothesis and trying to reach n=k+1, let’s add k+1 to both sides of the equation in the n=k step
+<br>1+2+…+k+(k+1) = k(k+1)/2 + (k+1)
+<br>= (k(k+1) + 2(k+1))/2
+<br>=((k+1)(k+2))/2
+</p>
+<p>
+<br>
+<h3>Counter example: These can be used to prove a claim to be false (rather than true)</h3>
+<br>Claim: “Every positive integer is the sum of the squares of two integers”
+<br>Counter:
+<br>1=0<sup>2</sup>+1<sup>2</sup>
+<br>2=1<sup>2</sup>+1<sup>2</sup>
+<br>3=? 
+</p>
+<p>
+<br>
+<h3>Infamous 1=2 Proof Mistake</h3>
+<ol>
+<li>a=b</li>
+<li>a<sup>2</sup>=ab</li>
+<li>a<sup>2</sup>-b<sup>2</sup>=ab-b<sup>2</sup></li>
+<li>(a-b)(a+b)=b(a-b)</li>
+<li>a+b=b</li>
+<li>2b=b</li>
+<li>2=1</li>
+</ol>
+The problem is with step 4->5, where we divide both sides by (a-b). However, because a=b, a-b is 0 and you cannot divide by 0. It is the fine print in the method of dividing both sides by a quantity, that the quantity cannot be 0. It is so rare the case we typically ignore it.
+</p>
+<p>
+And... that's the gist! Of course, there's plenty more proofs, but this would have been (and still is) a beautiful cheat sheet for any discrete mathematics class. 
+</p>
+							<a href="#" onClick="history.go(-1);return true;">Back To Blog</a>
+						</div>
+					</div>
+				</div>
+				<div style="padding-bottom:60px"></div>
+			</div>
+			<div class="footer">
+				Copyright &copy; 2020 Hayden Gemeinhardt
+			</div>
+		</div>
+	</body>
+
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+        $(".headercontent").load("../folderheadercontent.txt");
+    ;
+});
+</script>
