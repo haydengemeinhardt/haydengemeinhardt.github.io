@@ -9,21 +9,21 @@
 		<script type="text/javascript" src="minesweeper.js"></script>
 	</head>
 
-	<body onload="generateGrid()">
+	<body onload="startMinesweeper()">
 		<div class="container">
 			<div class="header">
 				<div class="headercontent"></div>
 			</div>
 			<div class="content">
 				<div class="title" style="text-align:center">Minesweeper</div><br>	
-				<div class="difficulty">
-					<div class="easy">Easy</div>
-					<div class="medium">Medium</div>
-					<div class="hard">Hard</div>
-				</div>		
-				<div class="grid"></div>
-				<div class="wintitle"><span>You Win!</span></div>
-				<button class="restart">Restart</button>				
+				<div class="mediumtext" style="text-align:center">Shift click to place flags<br>In order to win, all mines must be marked (and no clear spaces can be marked)
+				</div><br>
+				<span id="prompttext">Grid Size:</span><input id="gridsize" type="text" value="10" onkeydown="input(this)"/>		
+				<br>
+				<span id="prompttext" onclick="myFunction()">Mine Count:</span><input id="minecount" type="text" value="12" onkeydown="input(this)"/>
+				<div id="grid"></div>
+				<div id="wintitle" style="font-size:75px;"></div>
+				<button id="restart" style="margin-bottom:50px;">Restart</button><br><br><br><br>
 			</div>
 			<div class="footer">
 				Copyright &copy; 2020 Hayden Gemeinhardt
