@@ -27,7 +27,6 @@ function startMinesweeper()
 				garr[i][j] = 0; 
 			} 
 		} 
-		console.table(garr);
 	}
 
 	var generateGrid = function(){
@@ -208,9 +207,7 @@ function startMinesweeper()
 		var res = btn.value.split(",");
 		row = res[0];
 		col = res[1];
-		console.log(btn);
 		if (event.shiftKey && btn.id !="clicked"){//to set flag
-			console.log(btn.id);
 			if(btn.childNodes[1].value == 0) //no flag
 			{
 				btn.innerHTML = '<img src="images/flag.png" width="20" height="20"/>' + btn.innerHTML;
