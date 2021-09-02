@@ -247,26 +247,27 @@ h1, h2, h3{
 }
 
 /**************/
-.books{
+
+.gamecards{
 	padding: 0px;
 	margin: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1300px;
+	max-width: 1350px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.books li{
+.gamecards li{
 	cursor: pointer;
 	margin-top: 0px;
 	margin-bottom: 15px;
 	margin-right: 24px;
 	margin-left: 0px;
 	list-style: none;
-	width: 280px;
-	height: 400px;
+	height: 500px;
+	width: 400px;
 	background-color: white;
 	color: black;
 	display: flex;
@@ -277,16 +278,50 @@ h1, h2, h3{
 	font-size: 40px;
 }
 
+.gamewrap {
+  position: relative;
+  height: 500px;
+  width: 450px;
+}
 
+/**************/
+.bookcards{
+	padding: 0px;
+	margin: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 
-/* relevant styles */
-.imgwrap {
+.bookcards li{
+	cursor: pointer;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	margin-right: 24px;
+	margin-left: 0px;
+	list-style: none;
+	height: 400px;
+	width: 280px;
+	background-color: white;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: 2px solid black;
+	font-size: 40px;
+}
+
+.bookwrap {
   position: relative;
   height: 400px;
   width: 280px;
 }
 
-.imgdescriptionlayer {
+.bookdescriptionlayer {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -305,7 +340,7 @@ h1, h2, h3{
   font-weight: bold;
 }
 
-.imgwrap:hover .imgdescriptionlayer {
+.bookwrap:hover .bookdescriptionlayer {
   visibility: visible;
   opacity: 1;
 }
@@ -315,6 +350,6 @@ h1, h2, h3{
   transform: translateY(1em);
 }
 
-.imgwrap:hover .imgdescription {
+.bookwrap:hover .bookdescription {
   transform: translateY(0);
 }
