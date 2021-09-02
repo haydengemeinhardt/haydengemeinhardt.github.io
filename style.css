@@ -310,7 +310,6 @@ h1, h2, h3{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	border: 2px solid black;
 	font-size: 40px;
 }
@@ -336,7 +335,6 @@ h1, h2, h3{
   justify-content: center;
   text-align: center;
   transition: opacity .5s, visibility .5s;
-  font-size: 25px;
   font-weight: bold;
 }
 
@@ -345,9 +343,11 @@ h1, h2, h3{
   opacity: 1;
 }
 
-.imgdescription {
+.bookdescription {
   transition: .5s;
   transform: translateY(1em);
+  margin-left:20px;
+  margin-right:20px;
 }
 
 .bookwrap:hover .bookdescription {
