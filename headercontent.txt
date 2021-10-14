@@ -7,7 +7,6 @@
 		<a href="personalprojects.html">Personal Projects</a>
 	</div>
 </div>
-<a href="research.html">Research</a>
 <a href="games.html">Games</a>
 <a href="bookreviews/bookreviews.html">Book Reviews</a>
 <a href="martianbarber/martianbarber.html">Martian Barber</a>
