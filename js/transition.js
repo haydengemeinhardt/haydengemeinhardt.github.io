@@ -15,7 +15,7 @@ window.onload = () => {
 			transition_el.classList.add('is-active');
 			setTimeout(() =>{
 				window.location.href=target;
-		},500);
+		},1000);
 		});
 	}
 }
