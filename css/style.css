@@ -367,7 +367,6 @@ h1, h2, h3{
 }
 
 .transition-1.is-active{
-	animation: enlarge2 2.5s cubic-bezier(0.16, 1, 0.3, 1) 0.5s;
 	opacity:1;
 	pointer-events: all;
 }
