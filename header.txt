@@ -3,10 +3,10 @@
 <div class="dropdown">
 	<button class="dropdown-button">Writings<i class="fa fa-angle-down"></i></button>
 	<div class="dropdown-content">
-		<a href="writing/fiction/martianbarber.html">Martian Barber</a>
-		<a href="writing/blog.html">Blog</a>
-		<a href="writing/bookreviews.html">Book Reviews</a>
-		<a href="writing/honorsprojects.html">Honors Projects</a>
+		<a href="/writing/fiction/martianbarber.html">Martian Barber</a>
+		<a href="/writing/blog.html">Blog</a>
+		<a href="/writing/bookreviews.html">Book Reviews</a>
+		<a href="/writing/honorsprojects.html">Honors Projects</a>
 	</div>
 </div>
 <a href="research.html">Research</a>
