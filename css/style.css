@@ -35,6 +35,8 @@ h1, h2, h3{
 	background-color: black;
 	text-align: center;
 	overflow: hidden;
+	width: auto;
+	border: none;
 }
 
 .header a{
