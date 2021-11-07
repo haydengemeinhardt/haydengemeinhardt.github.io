@@ -46,6 +46,7 @@ h1, h2, h3{
 	font-size: 17px;
 	border: none;
 	width: auto;
+	margin: auto;
 }
 
 .header .active{
