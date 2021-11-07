@@ -36,6 +36,7 @@ h1, h2, h3{
 	text-align: center;
 	overflow: hidden;
 	border: none;
+	font-weight: normal;
 }
 
 .header a{
