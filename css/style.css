@@ -41,6 +41,7 @@ h1, h2, h3{
 .header a{
 	float: left;
 	color: #f2f2f2;
+	background-color: black;
 	text-align: center;
 	padding: 13px 18px;
 	font-size: 17px;
