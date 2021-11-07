@@ -36,7 +36,6 @@ h1, h2, h3{
 	text-align: center;
 	overflow: hidden;
 	border: none;
-	font-weight: normal;
 }
 
 .header a{
@@ -49,6 +48,7 @@ h1, h2, h3{
 	width: auto;
 	margin: auto;
 	border-radius: 0px;
+	font-weight: normal;
 }
 
 .header .active{
