@@ -35,7 +35,6 @@ h1, h2, h3{
 	background-color: black;
 	text-align: center;
 	overflow: hidden;
-	width: auto;
 	border: none;
 }
 
@@ -46,6 +45,7 @@ h1, h2, h3{
 	padding: 13px 18px;
 	font-size: 17px;
 	border: none;
+	width: auto;
 }
 
 .header .active{
