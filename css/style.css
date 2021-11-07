@@ -47,6 +47,7 @@ h1, h2, h3{
 	border: none;
 	width: auto;
 	margin: auto;
+	border-radius: 0px;
 }
 
 .header .active{
