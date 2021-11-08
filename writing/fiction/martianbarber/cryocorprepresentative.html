@@ -3,6 +3,8 @@
 	<head>
 		<title> Hayden Gemeinhardt </title>
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/transition.css">
+		<link rel="stylesheet" type="text/css" href="/css/astyle.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script type="text/javascript" src="/js/transition.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -21,8 +23,9 @@
 		</style>
 	</head>
 
-	<body>
-		<div style="background-image: url('/img/mars2.jpg')" class="container">
+	<body style="background-image: url('/img/mars2.jpg')" onunload="">
+		<div class="transition transition-1 is-active"></div>
+		<div class="container" style="background:rgba(0, 0, 0, 0.75)">
 			<div class="header"></div>
 			<div class="content">
 				<div class="title" style="text-align:center"></div>
