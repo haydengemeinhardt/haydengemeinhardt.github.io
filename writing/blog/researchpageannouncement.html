@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Hayden Gemeinhardt </title>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/transition.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="/js/transition.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+		$(function(){
+		  $(".header").load("/header.txt"); 
+		  $(".footer").load("/footer.txt"); 
+		});
+		</script>
+		<style>
+		h1 {font: 700 2.0rem/1.2 "Roboto";}
+		h2 {font: 700 1.5rem/1.2 "Roboto";} 
+		h3 {font: 700 1.0rem/1.2 "Roboto";}
+		p {font: 400 1.0rem/1.5 "Roboto";}
+		</style>
+	</head>
+
+
+	<body onunload="">
+		<div class="transition transition-1 is-active"></div>
+			<div class="header"></div>
+			<div class="content">
+				<div class="title" style="text-align:center">ScienceVsEngineeringBlog</div>
+				<div class="row">
+					<div class="column80">
+						<div class="card">
+							<a href="#" onClick="history.go(-1);return true;">Back To Blog</a>
+							<h1>Announcement: New Research Section</h1><br>
+							<h2>By: Hayden Gemeinhardt | November 19, 2020</h2>
+							<img src="/img/blog/mistake.jpg" width="950" height="500" style="margin-top: 10px; object-fit:cover" alt="Failed To Load"/>
+							<a target="blank" style="float:right" href="https://pixabay.com/photos/mistake-error-question-mark-fail-1966448/">Courtesy to Tumisu @pixabay</a>
+							<p><br>
+								As I get more and more involved in research, I decided I would love to document my journey through it. Kind of like a journal minus the cringeworthy rejections and angsty teen rants.
+							</p>
+							<p>
+								Given that I plan to do research in a future career, this may help portray my experience with it. Plus, I love going back through my life and reminiscing over the memories, hours of decoding bugs no less. Perhaps I'll stick with the insomnia-inducing journal...
+							</p>
+							<p>
+								Anyway, click the tab at the top!
+							</p>
+							<a href="#" onClick="history.go(-1);return true;">Back To Blog</a>
+						</div>
+					</div>
+				</div>
+				<div style="padding-bottom:60px"></div>
+			</div>
+			<div class="footer"></div>
+		</div>
+	</body>
+
+</html>

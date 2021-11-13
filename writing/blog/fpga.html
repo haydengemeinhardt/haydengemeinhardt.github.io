@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Hayden Gemeinhardt </title>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/transition.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="/js/transition.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+		$(function(){
+		  $(".header").load("/header.txt"); 
+		  $(".footer").load("/footer.txt"); 
+		});
+		</script>
+		<style>
+		h1 {font: 700 2.0rem/1.2 "Roboto";}
+		h2 {font: 700 1.5rem/1.2 "Roboto";} 
+		h3 {font: 700 1.0rem/1.2 "Roboto";}
+		p {font: 400 1.0rem/1.5 "Roboto";}
+		</style>
+	</head>
+
+
+	<body onunload="">
+		<div class="transition transition-1 is-active"></div>
+			<div class="header"></div>
+			<div class="content">
+				<div class="title" style="text-align:center">ScienceVsEngineeringBlog</div>
+				<div class="row">
+					<div class="column80">
+						<div class="card">
+							<a href="#" onClick="history.go(-1);return true;">Back To Blog</a>
+							<h1>What's All The Fuss About FPGAs?</h1><br>
+							<h2>By: Hayden Gemeinhardt | August 28, 2020</h2>
+							<img src="/img/blog/.jpg" width="950" height="500" style="margin-top: 10px; object-fit:cover" alt="Failed To Load"/>
+							<a target="blank" style="float:right" href="https://unsplash.com/photos/qChPy3L7Nz4">Courtesy to Sourabh Belekar @Unsplash</a>
+							<p><br>
+	Over the summer break, I began trying to get involved in research as I now had the core basics of computer science to start doing so. Luckily, I was able to meet with Dr. Jian Zhang at LSU. He had a project that matched perfectly with my CS & CE dual degree, a hardware accelerator for adversarial attacks on deep learning neural networks. Long story short, it was a bit out of my league, and I was mostly there to learn what the experience was like as I had not much else to do over my break.
+</p>
+<p>
+	In the project, they were using FPGA boards (field-programmable gate array). I had worked with these boards before in my digital logic classes, but knew little as to what purpose they served versus a simple CPU. So, I looked into it, and I learned quite a bit that I thought would be cool to write out.
+</p>
+<p>
+	An FPGA is a hardware circuit that is centered around configurable logic blocks (CLB) linked via programmable interconnects. These CLBs can be made to compute simple actions like AND or NOR, and use the interconnects to wire the CLBs as you would wire a circuit around logic gates. A user can program an FPGA by using a hardware description language, such as Verilog, and synthesizing a written code onto the board using a software like Vivado.
+</p>
+<h2>So my next question was, why is this special? As Patrick Star once said, “that’s just a bunch of fancy talk”, right?</h2>
+<p>
+In comparison, the hardware of an Application-Specific Integrated Circuit (ASIC) cannot be programmed. An ASIC encompasses about any microprocessor where the hardware is set in stone. For example, a computer’s CPU, a type of ASIC, is typically called an instruction based hardware. You can write software to instruct the CPU to perform your different tasks, but you never change the hardware.
+</p>
+<p>
+	It is a very small difference, and consequently, hard to understand if you don’t have a background in computers or electronics. However, the difference becomes huge when utilized correctly, like switching from a driver to a putter when you land a golf ball near the hole.
+</p>
+<p>
+	One of the key aspects of FPGAs is being able to reprogram the hardware, making it ideal for prototypes. If there is a bug, you can simply rewire it. On an ASIC, you would have to throw the entire chip away and make a new one, which can take tons of money and many months. You also have a much cheaper entry level for FPGAs. Creating a customized ASIC chip takes a LOT of money due to initial costs with NRE. Me or you likely will never be able to afford that. However, we can order a decent entry level FPGA board for $150 and program the board to perform our tasks.
+</p>
+<p>
+	On the other hand, FPGAs have been problematic in that they require a hardware description language, something many software engineers are not accustomed to. Furthermore, if you are planning on mass producing a chip, it is much cheaper to go the permanent ASIC route. Once you get past the initial fee to start producing the chips, they become fairly cheap compared to FPGAs. Specified ASICs are also much more energy efficient than their specified FPGA counterparts, which can start adding up when you have an entire room running them 24/7. ASICs even have better performance, as it is bare metal and can skip any complications that arise on a reprogrammable board.
+</p>
+<p>
+	This is not for all ASICs, as that is a very broad term. Your computer’s CPU is an ASIC, but an FPGA would be more energy efficient and have better performance since the manufacturer did not make it for your specific purpose. ASICs really only have these advantages when you take the design you made on an FPGA, perhaps in a prototype phase, and implemented it onto a permanent board to make it an ASIC.
+</p>
+<h2>So are FPGAs only good for prototyping ASICs?</h2>
+<p>
+	Not necessarily. Again, there are two big problems with simply making ASIC chips. It takes a lot of time and money. If you are in an emerging market that requires constant upgrades which often outpace any rate you could dream of making ASIC chips for, well, FPGAs are your way to go.
+</p>
+<p>
+	In almost every high end car, for example, FPGAs are universally used for 360 degree view or rear view camera. In fact, FPGA makers like Altera and Xilinx held a monopoly at one point on the rear view camera market. The reason being because the sensor technology is constantly evolving and you do not need to replace the entirety of the board to account for these changes, where using an ASIC you would.
+</p>
+<p>
+	FPGAs are also a big player in the AI market, as AI is progressing at a rate faster than Moore’s law, faster than silicon chips can be designed. In the past, GPUs were the go-to for machine learning. They were much more powerful than CPUs and could access memory faster. However, they consume a lot of power, which becomes a costly problem if you have a warehouse full of them.
+</p>
+<p>
+	GPU development simply has not been able to keep up with AI, so what’s the alternative? You cannot really accelerate the machine learning via software, and CPUs are out of the question because they simply fall behind for similar reasons to the GPU except even worse. You could try your hand at custom ASICs, but by the time you get the chip produced, it is out of date.
+</p>
+<p>
+	This is where FPGAs come into play. FPGAs still take a bit of power, though beat GPUs by a considerable amount. FPGAs also offer a significant increase in parallel computation as they can be more optimized than standard GPUs. You can even daisy chain together FPGA boards if you so desire. And best of all, FPGAs have the flexibility needed for the fast-growing AI market. If you need to reprogram the FPGA to include a certain component, you can have it running in hours or weeks. GPUs would require a remanufacturing and could take over a year.
+</p>
+<p>
+	Cloud computing is involved in the FPGA market as well. A few years ago, Microsoft started implementing FPGAs into its data centers. With a network of one hundred thousand FPGA boards, Microsoft is boasting big results with Bing, “1/2 the number of ranking servers, lower latency, reduced variance, proven scalability, proven resilience”.
+</p>
+<h2>Currently, FPGAs certainly have their advantageous scenarios.</h2>
+<p>
+	As for the future of FPGAs, well, that is a bit debated. I read a number of articles that said FPGAs were only a good intermediate point in machine learning, and now that more optimized solutions have been in demand, custom ASICs will take their place. The CEO of Flex Logic, Geoff Tate, stated in December of 2019, “A year from now, nobody will be designing in GPUs or FPGAs to do any high-volume inference applications.” The software development of FPGAs is a huge obstacle, parts of the market are starting to slow down, and more permanent solutions have their advantages.
+</p>
+<p>
+	Perhaps they are right, or perhaps they are only saying that to get a fun-to-read article. I certainly do not have the expertise to say so. But with Intel’s 16.7 billion dollar acquisition of Altera, or Microsoft’s new 100,000 strong FPGA fleet, who’s to say FPGAs do not have a future?
+
+</p>
+							<a href="#" onClick="history.go(-1);return true;">Back To Blog</a>
+						</div>
+					</div>
+				</div>
+				<div style="padding-bottom:60px"></div>
+			</div>
+			<div class="footer"></div>
+		</div>
+	</body>
+
+</html>

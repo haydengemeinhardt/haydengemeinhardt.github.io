@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Hayden Gemeinhardt </title>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/transition.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="/js/transition.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+		$(function(){
+		  $(".header").load("/header.txt"); 
+		  $(".footer").load("/footer.txt"); 
+		});
+		</script>
+		<style>
+		h1 {font: 700 2.0rem/1.2 "Roboto";}
+		h2 {font: 700 1.5rem/1.2 "Roboto";} 
+		h3 {font: 700 1.0rem/1.2 "Roboto";}
+		p {font: 400 1.0rem/1.5 "Roboto";}
+		</style>
+	</head>
+
+
+	<body onunload="">
+		<div class="transition transition-1 is-active"></div>
+			<div class="header"></div>
+			<div class="content">
+				<div class="title" style="text-align:center">ScienceVsEngineeringBlog</div>
+				<div class="row">
+					<div class="column80">
+						<div class="card">
+							<a href="#" onClick="history.go(-1);return true;">Back To Blog</a>
+							<h1>Ant Symmetry Puzzle</h1><br>
+							<h2>By: Hayden Gemeinhardt | January 18, 2021</h2>
+							<img src="/img/blog/antonrope.jpg" width="950" height="500" style="margin-top: 10px; object-fit:cover" alt="Failed To Load"/>
+							<a target="blank" style="float:right" href="https://unsplash.com/photos/3LnIiPXfHds">Courtesy to Aswin Thekkoot @Unsplash</a>
+							<p><br>
+	Over the break, I read about a few math puzzles and I absolutely fell in love with them.
+	</p>
+	<p>
+For some odd reason, my favorite problem was a symmetry puzzle regarding ants on a rope.
+	</p>
+	<p>
+Let’s say you have a one meter long piece of rope in a two dimensional space and a number (e.g. 100) of ants are placed on the rope facing a random direction. An ant walks one meter per minute from the beginning, but when it bumps into another ant, they both change directions. How long would it take for all of the ants to leave the rope?
+	</p>
+	<p>
+At first glance, seems nearly impossible to find out, right? 
+	</p>
+	<p>
+Wrong. You are so wrong. Like a dang Depeche Mode song.
+	</p>
+	<p>
+Due to the beauty of symmetry, two ants bouncing off each other would produce the same result as them simply passing through each other. In the end, you still have two ants going opposite directions. Of course, there is a little room for error regarding the length of the ants, so to fix that let’s just say it takes as long for the ants to turn around as it would for them to otherwise cover that body-length distance.
+	</p>
+	<p>
+So worst case scenario, it would take one minute for all ants to get off the rope.
+	</p>
+	<p>
+It’s so obvious, yet blew me away. Weird.
+
+</p>
+							<a href="#" onClick="history.go(-1);return true;">Back To Blog</a>
+						</div>
+					</div>
+				</div>
+				<div style="padding-bottom:60px"></div>
+			</div>
+			<div class="footer"></div>
+		</div>
+	</body>
+
+</html>
