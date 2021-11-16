@@ -1,6 +1,6 @@
 window.onload = () => {
 	const transition_el = document.querySelector('.transition');
-	const anchors = document.querySelectorAll('a');
+	const anchors = document.querySelectorAll('a, div.bookdescription');
 	
 	setTimeout(() => {
 		transition_el.classList.remove('is-active');
