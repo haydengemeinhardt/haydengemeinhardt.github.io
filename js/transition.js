@@ -1,6 +1,6 @@
 window.onload = () => {
 	const transition_el = document.querySelector('.transition');
-	const anchors = document.querySelectorAll('a');
+	const anchors = document.querySelectorAll('a, img');
 	
 	setTimeout(() => {
 		transition_el.classList.remove('is-active');
@@ -12,7 +12,7 @@ window.onload = () => {
 			e.preventDefault();
 			let target=e.target.href;
 			console.log(e);
-			console.log("yo");
+			console.log("yoo");
 			console.log(target);
 			transition_el.classList.add('is-active');
 			setTimeout(() =>{
