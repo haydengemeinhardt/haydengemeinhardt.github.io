@@ -11,6 +11,7 @@ window.onload = () => {
 		anchor.addEventListener('click', e =>{
 			e.preventDefault();
 			let target=e.target.href;
+			console.log(e);
 			console.log(target);
 			transition_el.classList.add('is-active');
 			setTimeout(() =>{
