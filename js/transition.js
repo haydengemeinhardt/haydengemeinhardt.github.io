@@ -13,8 +13,9 @@ window.onload = () => {
 			let target=e.target.href;
 			console.log(e);
 			console.log(e.target);
+			console.log(e.target.href);
 			console.log(anchor);
-			console.log("yoooo");
+			console.log("yo");
 			console.log(target);
 			transition_el.classList.add('is-active');
 			setTimeout(() =>{
