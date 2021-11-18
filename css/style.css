@@ -322,44 +322,42 @@ h1, h2, h3{
 }
 
 .bookwrap {
-  position: relative;
-  height: 400px;
-  width: 280px;
+	position: relative;
+	height: 400px;
+	width: 280px;
 }
 
 .bookdescriptionlayer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(212, 212, 212, 0.9);
-  color: black;
-  visibility: hidden;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  transition: opacity .5s, visibility .5s;
-  font-weight: bold;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(212, 212, 212, 0.9);
+	color: black;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: opacity .5s, visibility .5s;
+	font-weight: bold;
 }
 
 .bookwrap:hover .bookdescriptionlayer {
-  visibility: visible;
-  opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 
 .bookdescription {
-  transition: .5s;
-  transform: translateY(1em);
-  margin-left:20px;
-  margin-right:20px;
+	transition: .5s;
+	transform: translateY(1em);
 	text-decoration: none;
 }
 
 .bookwrap:hover .bookdescription {
-  transform: translateY(0);
+ 	transform: translateY(0);
 }
 
 
