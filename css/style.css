@@ -354,12 +354,12 @@ h1, h2, h3{
 	transition: .5s;
 	transform: translateY(1em);
 	text-decoration: none;
-	border-style: double; 
 	font-size: 30px; 
 	display: inline-block; 
 	height: 400px; 
 	width: 280px; 
 	padding: 0;
+	justify-content: center;
 	color: black;
 }
 
