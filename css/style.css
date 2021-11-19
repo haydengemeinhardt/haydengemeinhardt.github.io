@@ -360,6 +360,7 @@ h1, h2, h3{
 	height: 400px; 
 	width: 280px; 
 	padding: 0;
+	color: black;
 }
 
 .bookwrap:hover .bookdescription {
