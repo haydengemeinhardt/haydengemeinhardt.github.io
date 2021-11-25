@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Hayden Gemeinhardt </title>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/css/transition.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="/js/transition.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+		$(function(){
+		  $(".header").load("/header.txt"); 
+		  $(".footer").load("/footer.txt"); 
+		});
+		</script>
+		<style>
+		h1 {font: 700 2.0rem/1.2 "Roboto";}
+		h2 {font: 700 1.5rem/1.2 "Roboto";} 
+		h3 {font: 700 1.0rem/1.2 "Roboto";}
+		a {font: 500 2.0rem/1.5 "Roboto";}
+		</style>
+	</head>
+
+	<body onunload="">
+		<div class="transition transition-1 is-active"></div>
+		<div class="container">
+			<div class="header"></div>
+			<div class="content">
+				<div class="title"><br>Games Made With Too Much Free Time:</div>
+				<div class="gamecards" style="width:500">
+					<div class="gamewrap">
+						<li><a href="/games/hangman.html"><h2>Hangman</h2>
+						<img src="/img/games/hangman.jpg" height="200" width="200" style="object-fit:cover;border: 2px solid black;" class="center" alt="Failed To Load"/>
+						<p>You'll lose, don't worry...</p></a></i>
+					</div>
+					<div class="gamewrap">
+						<li><a href="/games/matching.html"><h2>Matching</h2>
+						<img src="/img/games/matching.jpg" height="200" width="200" style="object-fit:cover;border: 2px solid black;" class="center" alt="Failed To Load"/>
+						<p>Haven't played this one in a while huh?</p></a></i>
+					</div>	
+					<div class="gamewrap">
+						<li><a href="/games/minesweeper.html"><h2>Minesweeper</h2>
+						<img src="/img/games/minesweeper.jpg" height="200" width="200" style="object-fit:cover;border: 2px solid black;" class="center" alt="Failed To Load"/>
+						<p>Customizable grid to your liking ;-)</p></a></i>
+					</div>							
+				</div>
+			</div>
+			<div class="footer"></div>
+		</div>
+	</body>
+</html>
