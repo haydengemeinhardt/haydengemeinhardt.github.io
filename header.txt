@@ -9,12 +9,12 @@
 		<a href="/writing/honorsprojects.html">Honors Projects</a>
 	</div>
 </div>
-<a href="research.html">Research</a>
+<a href="/research.html">Research</a>
 <div class="dropdown">
 	<button class="dropdown-button">Miscellaneous<i class="fa fa-angle-down"></i></button>
 	<div class="dropdown-content">
-		<a href="games.html">Games</a>
+		<a href="/games.html">Games</a>
 		<a href="personalprojects.html">Personal Projects</a>
 	</div>
 </div>
-<a href="about.html">About</a>
+<a href="/about.html">About</a>
