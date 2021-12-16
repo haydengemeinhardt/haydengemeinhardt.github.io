@@ -35,21 +35,16 @@ h1, h2, h3{
 	background-color: black;
 	text-align: center;
 	overflow: hidden;
-	border: none;
+	width: auto;
+	font-weight: normal;
 }
 
 .header a{
 	float: left;
-	color: #f9f9f9;
-	background-color: black;
+	color: #f2f2f2;
 	text-align: center;
 	padding: 13px 18px;
 	font-size: 17px;
-	border: none;
-	width: auto;
-	margin: auto;
-	border-radius: 0px;
-	font-weight: normal;
 }
 
 .header .active{
@@ -69,15 +64,15 @@ h1, h2, h3{
 	font-size: 17px;  
 	border: none;
 	outline: none;
-	color: #f9f9f9;
-	background-color: black;
+	color: #f2f2f2;
 	padding: 13px 18px;
+	background-color: inherit;
 	font-family: inherit;
 	margin: 0;
 }
 
 .header a:hover, .dropdown:hover .dropdown-button{
-	background-color: #f9f9f9;
+	background-color: #ddd;
 	color: black;
 }
 
@@ -85,16 +80,14 @@ h1, h2, h3{
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
-	color: black;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 }
 
 .dropdown-content a{
-	background-color: black;
-	color: #f9f9f9;
 	float: none;
+	color: #f2f2f2;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
@@ -102,8 +95,7 @@ h1, h2, h3{
 }
 
 .dropdown-content a:hover{
-	background-color: #f9f9f9;
-	color: black;
+	background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content{
@@ -263,7 +255,7 @@ h1, h2, h3{
 	margin: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1350px;
+	max-width: 1300px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -272,26 +264,58 @@ h1, h2, h3{
 .gamecards li{
 	cursor: pointer;
 	margin-top: 0px;
-	margin-bottom: 15px;
-	margin-right: 24px;
+	margin-bottom: 0px;
+	margin-right: 0px;
 	margin-left: 0px;
 	list-style: none;
-	height: 500px;
+	height: 400px;
 	width: 400px;
 	background-color: white;
 	color: black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	border: 2px solid black;
 	font-size: 40px;
 }
 
 .gamewrap {
   position: relative;
-  height: 500px;
-  width: 450px;
+  height: 400px;
+  width: 400px;
+}
+
+.gamedescriptionlayer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(212, 212, 212, 0.9);
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity .5s, visibility .5s;
+  font-weight: bold;
+}
+
+.gamewrap:hover .gamedescriptionlayer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.gamedescription {
+  transition: .5s;
+  transform: translateY(1em);
+
+}
+
+.gamewrap:hover .gamedescription {
+  transform: translateY(0);
 }
 
 /**************/
@@ -309,8 +333,8 @@ h1, h2, h3{
 .bookcards li{
 	cursor: pointer;
 	margin-top: 0px;
-	margin-bottom: 15px;
-	margin-right: 24px;
+	margin-bottom: 0px;
+	margin-right: 0px;
 	margin-left: 0px;
 	list-style: none;
 	height: 400px;
@@ -325,48 +349,42 @@ h1, h2, h3{
 }
 
 .bookwrap {
-	position: relative;
-	height: 400px;
-	width: 280px;
+  position: relative;
+  height: 400px;
+  width: 280px;
 }
 
 .bookdescriptionlayer {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(212, 212, 212, 0.9);
-	color: black;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity .5s, visibility .5s;
-	font-weight: bold;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(212, 212, 212, 0.9);
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity .5s, visibility .5s;
+  font-weight: bold;
 }
 
 .bookwrap:hover .bookdescriptionlayer {
-	visibility: visible;
-	opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .bookdescription {
-	transition: .5s;
-	transform: translateY(1em);
-	text-decoration: none;
-	font-size: 30px; 
-	display: inline-block; 
-	height: 400px; 
-	width: 280px; 
-	padding: 0;
-	color: black;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+  transition: .5s;
+  transform: translateY(1em);
+
 }
 
 .bookwrap:hover .bookdescription {
- 	transform: translateY(0);
+  transform: translateY(0);
 }
 
 
