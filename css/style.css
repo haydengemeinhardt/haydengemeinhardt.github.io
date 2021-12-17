@@ -39,6 +39,7 @@ h1, h2, h3{
 	padding:0px;
 	border:none;
 	border-radius:0px;
+	font-weight: none;
 }
 
 .header a{
