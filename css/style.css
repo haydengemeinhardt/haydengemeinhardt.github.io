@@ -51,6 +51,8 @@ h1, h2, h3{
 	text-align: center;
 	padding: 13px 18px;
 	font-size: 17px;
+	border-radius:0px;
+	width:50px;
 }
 
 .header .active{
