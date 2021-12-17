@@ -50,7 +50,7 @@ h1, h2, h3{
 	width:auto;
 	border:none;
 	border-radius:0px;
-	padding: 13px 18px;
+	padding: 13px 18px 0px 0px;
 	margin:0px;
 	font-family: Helvetica, Arial, sans-serif;
 }
