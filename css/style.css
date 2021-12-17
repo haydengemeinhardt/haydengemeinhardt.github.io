@@ -78,6 +78,7 @@ h1, h2, h3{
 	font-family: inherit;
 	text-align: center;
 	margin: 0;
+	display: block;
 }
 
 .header a:hover, .dropdown:hover .dropdown-button{
