@@ -45,7 +45,6 @@ h1, h2, h3{
 	color: #f2f2f2;
 	background-color:black;
 	text-align: center;
-	padding: 13px 18px;
 	font-size: 17px;
 	font-weight: normal;
 	width:auto;
@@ -77,6 +76,7 @@ h1, h2, h3{
 	background-color:black;
 	padding: 13px 18px;
 	font-family: inherit;
+	text-align: center;
 	margin: 0;
 }
 
