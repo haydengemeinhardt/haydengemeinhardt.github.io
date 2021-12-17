@@ -40,6 +40,8 @@ h1, h2, h3{
 	margin:0px;
 	padding:0px;
 	border:none;
+	border-radius:0px;
+	width:50px;
 }
 
 .header a{
