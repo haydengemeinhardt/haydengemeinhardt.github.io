@@ -294,6 +294,7 @@ h1, h2, h3{
   position: relative;
   height: 400px;
   width: 400px;
+  margin-top: 10px;
 }
 
 .gamedescriptionlayer {
