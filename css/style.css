@@ -48,7 +48,7 @@ h1, h2, h3{
 	padding: 13px 18px;
 	font-size: 17px;
 	font-weight: normal;
-	width: 160px;
+	min-width: 100px;
 	border:none;
 	border-radius:0px;
 	padding: 13px 18px;
