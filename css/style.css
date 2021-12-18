@@ -340,8 +340,7 @@ h1, h2, h3{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	text-decoration: none;
-	color: black;
+	
 }
 
 .bookcards li{
@@ -394,7 +393,8 @@ h1, h2, h3{
 .bookdescription {
   transition: .5s;
   transform: translateY(1em);
-
+  text-decoration: none;
+  color: black;
 }
 
 .bookwrap:hover .bookdescription {
