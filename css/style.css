@@ -340,6 +340,8 @@ h1, h2, h3{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	text-decoration: none;
+	color: black;
 }
 
 .bookcards li{
