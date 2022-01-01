@@ -210,7 +210,7 @@ function startMinesweeper()
 		if (event.shiftKey && btn.id !="clicked"){//to set flag
 			if(btn.childNodes[1].value == 0) //no flag
 			{
-				btn.innerHTML = '<img src="images/flag.png" width="20" height="20"/>' + btn.innerHTML;
+				btn.innerHTML = '<img src="/img/games/flag.png" width="20" height="20"/>' + btn.innerHTML;
 				btn.childNodes[2].value = 1;
 				if(btn.childNodes[1].nodeValue == 99){minesleft-=1;}
 				flagcount+=1;
