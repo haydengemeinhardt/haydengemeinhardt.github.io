@@ -396,7 +396,9 @@ h1, h2, h3{
   color: black;
   font-size: 40px;
   font-weight: 500;
-font-family: Roboto;
+  font-family: Roboto;
+  height: 400px;
+  width: 280px;
 }
 
 .bookwrap:hover .bookdescription {
