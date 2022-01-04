@@ -1,6 +1,6 @@
 // if you are reading this, it is still in a mess from my testing... but I think I finally fixed the bug?!
 
-function startHangman() {
+function startMatching() {
 	var numbers = ['1', '1', '2', '2', '3', '3', '4', '4', '5', '5', '6', '6', '7', '7', '8', '8'];
 	var win = 0;
 	var words = "fdg";
