@@ -400,6 +400,7 @@ h1, h2, h3{
   height: 400px;
   width: 280px;
   text-align: center;
+  align-items: center;
 }
 
 .bookwrap:hover .bookdescription {
