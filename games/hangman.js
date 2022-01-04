@@ -86,13 +86,13 @@ function startHangman() {
 	}
 	
 	var updateMan = function () {
-		if (lives === 6) {document.getElementById("hangingMan").innerHTML = '<img src="hangmanimages/hangman1.jpg">';}
-		else if (lives === 5) {document.getElementById("hangingMan").innerHTML = '<img src="hangmanimages/hangman2.jpg">';}
-		else if (lives === 4) {document.getElementById("hangingMan").innerHTML = '<img src="hangmanimages/hangman3.jpg">';}
-		else if (lives === 3) {document.getElementById("hangingMan").innerHTML = '<img src="hangmanimages/hangman4.jpg">';}
-		else if (lives === 2) {document.getElementById("hangingMan").innerHTML = '<img src="hangmanimages/hangman5.jpg">';}
-		else if (lives === 1) {document.getElementById("hangingMan").innerHTML = '<img src="hangmanimages/hangman6.jpg">';}
-		else {document.getElementById("hangingMan").innerHTML = '<img src="hangmanimages/hangman7.jpg">';}
+		if (lives === 6) {document.getElementById("hangingMan").innerHTML = '<img src="/img/hangmanimages/hangman1.jpg">';}
+		else if (lives === 5) {document.getElementById("hangingMan").innerHTML = '<img src="/img/hangmanimages/hangman2.jpg">';}
+		else if (lives === 4) {document.getElementById("hangingMan").innerHTML = '<img src="/img/hangmanimages/hangman3.jpg">';}
+		else if (lives === 3) {document.getElementById("hangingMan").innerHTML = '<img src="/img/hangmanimages/hangman4.jpg">';}
+		else if (lives === 2) {document.getElementById("hangingMan").innerHTML = '<img src="/img/hangmanimages/hangman5.jpg">';}
+		else if (lives === 1) {document.getElementById("hangingMan").innerHTML = '<img src="/img/hangmanimages/hangman6.jpg">';}
+		else {document.getElementById("hangingMan").innerHTML = '<img src="/img/hangmanimages/hangman7.jpg">';}
 	}
 
 	
