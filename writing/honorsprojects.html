@@ -15,11 +15,9 @@
 		});
 		$(function(){
 		var backgrounds=['futurecity','futurecity2','futurecity3'];
-
 		var randn = Math.floor(Math.random() * backgrounds.length);
 		var background = backgrounds[randn];
-
-		$('body').style("background-image:url('/img/'"+background+".jpg');");
+		document.body.background = '/img/'+background+'.jpg';
 		});
 		</script>
 	</head>
