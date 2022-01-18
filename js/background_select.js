@@ -3,4 +3,5 @@ window.onload = () => {
 	var randn = Math.floor(Math.random() * backgrounds.length);
 	var background = backgrounds[randn];
 	document.body.backgroundImage = '/img/'+background+'.jpg';
+	console.log('it loaded');
 }
