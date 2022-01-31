@@ -30,13 +30,15 @@ function startHangman() {
 	/* Show lives */
 	var updateLives = function () {
 		currentLives = document.getElementById('lives');
+		if (win != 1){
 		if (lives < 1)
 		{
-			currentLives.innerHTML = "You lost!";
-			win = -1;
+				currentLives.innerHTML = "You lost!";
+				win = -1;
+			}
+			else
+				currentLives.innerHTML = "You have " + lives + " lives";
 		}
-		else
-			currentLives.innerHTML = "You have " + lives + " lives";
 		if (letterCount == word.length && win == 0)
 		{
 			currentLives.innerHTML = "You Win!";
