@@ -2,18 +2,16 @@
 <div class="dropdown">
 	<button class="dropdown-button">Writings<i class="fa fa-angle-down"></i></button>
 	<div class="dropdown-content">
-		<a href="/writing/fiction/martianbarber.html">Martian Barber</a>
-		<a href="/writing/blog.html">Blog</a>
-		<a href="/writing/bookreviews.html">Book Reviews</a>
-		<a href="/writing/honorsprojects.html">Honors Projects</a>
+		<a href="/writing/georgesninth.html">Martian Barber</a>
+		<a href="/writing/martianbarber.html">Martian Barber</a>
 	</div>
 </div>
 <a href="/research.html">Research</a>
 <div class="dropdown">
 	<button class="dropdown-button">Miscellaneous<i class="fa fa-angle-down"></i></button>
 	<div class="dropdown-content">
-		<a href="/games.html">Games</a>
-		<a href="personalprojects.html">Personal Projects</a>
+		<a href="/games/games.html">Games</a>
+		<a href="/books/bookreviews.html">My Library</a>
 	</div>
 </div>
 <a href="/about.html">About</a>
