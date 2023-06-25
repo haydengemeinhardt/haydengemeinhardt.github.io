@@ -14,4 +14,8 @@ a{
 	margin-left: auto;
 	margin-right: auto;
 }
-
+#pic{
+	border-radius: 0px;
+	border: none;
+	width:600px;
+}
