@@ -2,7 +2,7 @@
 <div class="dropdown">
 	<button class="dropdown-button">Writings<i class="fa fa-angle-down"></i></button>
 	<div class="dropdown-content">
-		<a href="/writing/georgesninth.html">Martian Barber</a>
+		<a href="/writing/georgesninth.html">George's Ninth</a>
 		<a href="/writing/martianbarber.html">Martian Barber</a>
 	</div>
 </div>
