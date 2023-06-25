@@ -21,18 +21,38 @@
 		<div class="container" style="background:rgba(0, 0, 0, 0.75)">
 			<div class="header"></div>
 			<div class="content">
-				<div class="title" style="text-align:center">My Ongoing Research</div>
+				<div class="title" style="text-align:center">Current Research</div>
 				<div class="columncontainer">
-					<a href="research/deepdrug.html" style="margin-bottom:50px">
-						Deep Drug
-					</a>
-					<a href="research/readymades.html" style="margin-bottom:50px">
-						Ready Mades
-					</a>
+					<div class="card center" style="width:800px; text-align:left">
+						<h1 style="text-align: center">Deep Drug</h1><br>
+						<p>We introduce a link prediction method for protein-protein interaction. Previous studies have created
+						distributed representations of biological sequences to be applied for bioinformatic investigations. In this
+						study, we focus on the pretrained model ProtVec, a distributed representation of protein FASTAs. We
+						pull data from three databases, namely hu.MAP, IntAct, and STRING, for a total of 94,650 proteins and
+						6,324,918 distinct interactions between them with weights above a negligible threshold of 0.01. Then,
+						we use the proteins’ amino acid sequences in FASTA format to feed them into ProtVec for vectorized
+						representations. Using the protein vectors and weighted interactions, we utilize GraphSAGE, a GCN
+						framework designed for large graphs, to train a link prediction model. To evaluate the model, we use
+						test sets of both randomly selected proteins and specific notable proteins in COVID and cancer research
+						where an accuracy upwards of 90% was achieved. These results indicate that accurate predictions
+						regarding a protein’s interaction with other proteins can be made. This model needs to only be trained
+						once and can then be implemented into software such as LSU’s DeepDrug, where an AI algorithm can
+						utilize the model to accurately predict the importance of a protein in drug discovery use cases.
+						Furthermore, the protein embeddings derived from the model can be used to run classification tasks,
+						determining protein families or protein pathways a protein interacts with and the protein’s involvement
+						on a biological-systems level.</p>
+						<img src="research/ppipredposter.png" height="300" width="500" style="object-fit:cover;border: 2px solid black; cursor: pointer;" class="center" onclick="window.open('research/ppipredposter.pdf')">
+					</div>
+						<div class="card center" style="width:800px; text-align:left">
+						<h1 style="text-align: center">Pipeline Leak Detection</h1><br>
+						Coming soon
+						<img src="research/pipelinemlposter.png" height="300" width="500" style="object-fit:cover;border: 2px solid black; cursor: pointer;" class="center" onclick="window.open('research/pipelinemlposter.pdf')">
+					</div>
 				</div>
-			<div class="footer"></div>
 			</div>
 		</div>
+		<div style="padding-bottom:60px"></div>
+		<div class="footer"></div>
 	</body>
 </html>
 <script type="text/javascript" src="/js/background_select.js"></script>
