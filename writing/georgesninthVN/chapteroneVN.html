@@ -23,7 +23,7 @@
 		$(document).ready(function(){
 			function changeAudio(a) {
 				var audio = document.getElementById('audio_player');
-				console.log(a);
+				document.getElementById('track').muted = false;
 				if (a==1) {
 				console.log('111');
 					document.getElementById('track').src = '2-01 Wiosna.mp3';
@@ -37,6 +37,9 @@
 				}
 				else if (a==4){
 					document.getElementById('track').src = 'Lacrimosa slowed.mp3';
+				}
+				else if (a==99){
+					document.getElementById('track').muted = true;
 				}
 				document.getElementById('audio_player').load();
 			}
@@ -61,6 +64,7 @@
 					if (par_num == 0){changeAudio(1)};
 					if (par_num == 22){changeAudio(2)};
 					if (par_num == 32){changeAudio(3)};
+					if (par_num == 61){changeAudio(99)};
 					if (par_num == 62){changeAudio(4)};
 					var par = document.createElement('p');
 					par.id = "par"+par_num;
@@ -104,10 +108,10 @@
 			<div class="header"></div>
 			<div class="content">
 				<div class="row" style="display: flex; justify-content: center; align-items: center; text-align: center; min-height: 100vh;">
-					<audio autoplay loop id="audio_player">
+					<audio autoplay id="audio_player">
 						<source src="girl in red - girls.mp3" id="track" type="audio/mpeg">
 					</audio>
-					<div class="card" id="clickbox" style="height: 600px; width: 850px; margin: auto; background:rgba(0, 0, 0, 0.75); color:white;"><div class="prose" id="bookpage" style="text-align: center; width: 800px;">
+					<div class="card" id="clickbox" style="height: 600px; width: 850px; margin: auto; background:rgba(0, 0, 0, 0.75); color:white;"><div class="prose" id="bookpage" style="width: 800px; text-align: center;">
 						
 					</div></div>
 				</div>
