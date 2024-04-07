@@ -23,11 +23,12 @@
 		$(document).ready(function(){
 			function changeAudio(a) {
 				var audio = document.getElementById('audio_player');
-				document.getElementById('track').muted = false;
+				document.getElementById('audio_player').volume = 1;
 				if (a==1) {
 					document.getElementById('track').src = 'Dagger.mp3';
 				}
 				else if (a==2){
+					document.getElementById('audio_player').volume = 0.3;
 					document.getElementById('track').src = 'La Dispute-King Park.mp3';
 				}
 				else if (a==3){
@@ -37,7 +38,7 @@
 					document.getElementById('track').src = 'M83 - Wait (Instrumental).mp3';
 				}
 				else if (a==99){
-					document.getElementById('track').muted = true;
+					document.getElementById('audio_player').volume = 0;
 				}
 				document.getElementById('audio_player').load();
 			}
@@ -97,17 +98,17 @@
 					if (par_num == 0){changeAudio(1)};
 					if (par_num == 22){changeAudio(2);
 									   changeBackground(2);};
-					if (par_num == 24){changeAudio(99)
-									   changeBackground(3)};
-					if (par_num == 26){changeAudio(3)
-									   changeBackground(4)};
+					if (par_num == 24){changeAudio(99);
+									   changeBackground(3);};
+					if (par_num == 26){changeAudio(3);
+									   changeBackground(4);};
 					if (par_num == 28){changeBackground(5)};
 					if (par_num == 38){changeBackground(6)};
 					if (par_num == 60){changeBackground(7)};
 					if (par_num == 64){changeAudio(4);
-										changeBackground(8)};
-					if (par_num == 72){changeBackground(9)};
-					if (par_num == 74){changeBackground(10)};
+										changeBackground(8);};
+					if (par_num == 72){changeBackground(9);};
+					if (par_num == 74){changeBackground(10);};
 					var par = document.createElement('p');
 					par.id = "par"+par_num;
 					console.log(document.getElementById('bookpage').clientHeight);
