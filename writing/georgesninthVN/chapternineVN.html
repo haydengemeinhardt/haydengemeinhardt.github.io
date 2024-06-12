@@ -27,9 +27,11 @@
 				document.getElementById('audio_player').volume = 1
 				document.getElementById('audio_player').loop = true
 				if (a==1) {
+					document.getElementById('audio_player').loop = true
 					document.getElementById('track').src = 'Dagger.mp3';
 				}
 				if (a==2) {
+					document.getElementById('audio_player').loop = false
 					document.getElementById('track').src = 'whereismymind.mp3';
 				}
 				else if (a==99){
