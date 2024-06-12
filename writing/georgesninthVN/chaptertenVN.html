@@ -36,11 +36,8 @@
 					document.getElementById('track').src = '1-14 Raindrops and Puddles.mp3';
 				}
 				if (a==4) {
-					document.getElementById('audio_player').loop = false
+					document.getElementById('audio_player').loop = true
 					document.getElementById('track').src = 'clairdelune.mp3';
-				}
-				if (a==5) {
-					document.getElementById('track').src = 'perfectgirl.mp3';
 				}
 				else if (a==99){
 					document.getElementById('audio_player').volume = 0;
@@ -98,7 +95,6 @@
 					if (par_num == 137){changeBackground(5)
 					changeAudio(4)};
 					if (par_num == 167){changeBackground(6)};
-					if (par_num == 171){changeAudio(5)};
 					var par = document.createElement('p');
 					par.id = "par"+par_num;
 					console.log(document.getElementById('bookpage').clientHeight);
